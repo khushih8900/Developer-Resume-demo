@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Azeret Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Responsive Utilities */
+.hero-container h1,
+.container h1,
+.target-container h1,
+.support-info h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    line-height: 1.2;
+}
+
+.hero-container p,
+.container p,
+.target-container p,
+.support-info p,
+.info-details p,
+.program p {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    line-height: 1.6;
+}
+
+button,
+.feedback-form input {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+iframe {
+    height: 60vh;
+}
+
+/* Flex responsiveness */
+.all-programs,
+.information,
+.feedback-form,
+footer {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.program,
+.info-card,
+.group,
+.group2,
+.info-details,
+.next-target {
+    width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .hero-container,
+    .info-container,
+    .container,
+    .target-container,
+    .support-content,
+    .support-info {
+        width: 90%;
+    }
+    .navigation {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-container,
+    .info-details,
+    .info-target {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .program {
+        width: 100%;
+    }
+    .feedback-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback-form input,
+    .feedback-form button {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigation button,
+    .hero-container button,
+    .info-details button,
+    .program button {
+        width: 100%;
+        padding: 12px;
+    }
+    iframe {
+        height: 40vh;
+    }
+}
