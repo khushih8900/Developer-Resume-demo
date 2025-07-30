@@ -381,7 +381,16 @@ iframe {
     padding: 2.7rem;
     border-radius: 16px;
     background: rgba(255, 76, 30, 0.05);
+    transition: box-shadow 0.4s ease-in-out;
 
+}
+
+.program:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.bg-color {
+    background: rgba(0, 76, 232, 0.05);
 }
 
 .program h3 {
@@ -402,7 +411,7 @@ iframe {
 
 }
 
-.info-details button {
+.program button {
     width: 220px;
     padding: 20px;
     font-weight: bold;
@@ -611,4 +620,38 @@ iframe {
 .feedback-form button:hover {
     background-color: #333;
     color: #b6a7a7;
+}
+
+/* footer section */
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    background: rgba(13, 19, 33, 0.03);
+
+}
+
+footer h6 {
+    color: rgb(13, 19, 33);
+    font-size: 1rem 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    opacity: .7;
+}
+
+footer ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+footer ul a {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    color: #333;
 }
