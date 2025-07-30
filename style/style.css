@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+
+.navigation {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(60, 99, 130, 1.0);
+    padding: 0 10%;
+}
+
+.logo a {
+    color: rgba(250, 211, 144,1.0);
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: left;
+
+}
